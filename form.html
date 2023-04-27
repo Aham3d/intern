@@ -9,34 +9,35 @@
 <body>
 
 
-  <form id="my-form">
+  <form id="form">
+    <h2>Sign Up</h2>
     <div class="form-group">
-      <label for="name">Full Name:</label>
+      <div class="label" for="name">Full Name</div>
       <input type="text" id="name" name="name" required minlength="3">
     </div>
     
     <div class="form-group">
-      <label for="phone">Phone Number:</label>
+      <div class="label" for="phone">Phone Number</div>
       <input type="tel"  placeholder="555-555-5555" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
     </div>
     
     <div class="form-group">
-      <label for="email">Email Address:</label>
+      <div class="label" for="email">Email Address</div>
       <input type="email" placeholder="name@gmail.com" id="email" name="email" required>
     </div>
     
     <div class="form-group">
-      <label for="website">Website URL:</label>
+      <div class="label" for="website">Website URL</div>
       <input type="url" id="website" name="website" required>
     </div>
     
     <div class="form-group">
-      <label for="password">Password:</label>
+      <div class="label" for="password">Password</div>
       <input type="password" placeholder="Min. 8 characters" id="password" name="password" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$">
     </div>
     
     <div class="form-group">
-      <label for="confirm-password">Confirm Password:</label>
+      <div class="label" for="confirm-password">Confirm Password</div>
       <input type="password" placeholder="Re-enter Password" id="confirm-password" name="confirm-password" required>
     </div>
     

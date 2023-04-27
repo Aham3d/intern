@@ -1,4 +1,4 @@
-const form = document.querySelector('form');
+const form = document.querySelector('#form');
 const nameInput = document.querySelector('#name');
 const phoneInput = document.querySelector('#phone');
 const emailInput = document.querySelector('#email');
@@ -68,12 +68,6 @@ function validateForm(event) {
     console.log(`Email: ${emailInput.value}`);
     console.log(`Website: ${websiteInput.value}`);
     form.reset();
-    nameInput.classList.remove('valid', 'invalid');
-    phoneInput.classList.remove('valid', 'invalid');
-    emailInput.classList.remove('valid', 'invalid');
-    websiteInput.classList.remove('valid', 'invalid');
-    passwordInput.classList.remove('valid', 'invalid');
-    confirmPasswordInput.classList.remove('valid', 'invalid');
   } else {
     console.log('Form validation failed');
   }
