@@ -8,7 +8,7 @@ body {
   align-items: center;
   justify-content: center;
   display: flex;
-  background: linear-gradient(to top, rgba(0, 64, 255, 0.4), rgba(0, 213, 255, 0.592));
+  background: linear-gradient(to top, rgba(0, 98, 255, 0.504), rgba(0, 255, 128, 0.482));
 }
 
 .form-group {
@@ -16,12 +16,12 @@ body {
 }
 
 form {
-  background: linear-gradient(to top, rgba(0,0,0,0.1)50%, rgba(0,0,0,0.1)50%);
+  background: linear-gradient(to top, rgba(0,0,0,0.05)50%, rgba(0,0,0,0.05)50%);
   padding-top: 1rem !important;
   border-radius: 1rem;
   padding: 2rem;
-  box-shadow: 5px 5px 30px rgba(0,0,0,0.20);
-
+  box-shadow: 5px 5px 100px rgba(0,0,0,0.15), -5px -5px 100px rgba(0,0,0,0.15);
+  border: 1px solid rgba(255, 255, 255, 0.229);
 }
 
 form h2 {
@@ -52,12 +52,20 @@ input {
 }
 
 input:focus {
-  border-bottom: 1px solid #3c8dbc;
+  border-bottom: 1px solid #000000;
   outline: none;
 }
 
 input::placeholder {
   color: rgba(86, 86, 86, 0.89);
+}
+
+.valid {
+  border-bottom: 1px solid green;
+}
+
+.invalid {
+  border-bottom: 1px solid crimson;
 }
 
 button {
